@@ -27,39 +27,235 @@
   <div id="header">
 
     <!-- 左邊-logo -->
-    <!-- <div class="side h-100"> -->
-    <div class="icon1 h-60"></div> <!-- 缺圖icon 跑不出來，框框待刪-->
-    <div class="logo h-60"></div> <!-- 缺logo，置右，框框待刪 -->
-    <!-- </div> -->
+    <!-- icon 太粗，細的跑不出來，框框待刪-->
+    <div class="icon1 h-60"><i class="fa-solid fa-bars"></i></div>
+    <div class="logo h-60"><img src="./images/logo_1.png" alt="Youtube_logo"></div>
 
     <!-- 中間-搜尋 -->
-    <div class="search-left h-60">
-      <div class="search-text1 h-100">搜尋</div>
-      <div class="search-right h-100">
-        <div class="search-text2 h-100">缺</div> <!-- 缺icon 字大小要和搜尋一樣嗎-->
+    <!-- 網頁縮小的時候要變成剩放大鏡 -->
+    <div class="search-L h-60">
+      <div class="searchText-L h-100">搜尋</div>
+      <div class="search-R h-100">
+        <!-- icon 太粗，細的跑不出來，框框待刪-->
+        <div class="searchText-R h-100"><i class="fa-solid fa-magnifying-glass"></i></div>
       </div>
     </div>
 
-    <div class="icon2_mic">
-      <div class="search-text2">缺</div>
+    <div class="search-iconMic">
+      <div class="searchText-R"><i class="fa-solid fa-microphone"></i></div>
     </div><!-- 缺icon -->
 
     <!-- 右邊-登入 -->
     <div class="singIn h-60">
-      <div class="text3">缺 登入</div><!-- 缺icon 顏色待確認 -->
+      <!-- icon 太粗，細的跑不出來，框框待刪-->
+      <div class="singInText">
+        <i class="fa-regular fa-circle-user"></i>
+        <div class="row">登入</div>
+      </div>
     </div>
-    <div class="icon3 h-60"></div>
+  </div>
+  <div class="singIn-icon h-60"><i class="fa-solid fa-ellipsis-vertical"></i></div>
   </div>
 
 
+  <!--sidebar  -->
+  <div id="sidebar">
+
+    <!-- 看要自己放icon還是用網路的? -->
+    <!-- 卷軸要隱藏，等 hover 再出現 -->
+
+    <input id="side01" type="radio" name="sideUp" checked>
+    <label class="box" for="side01">
+      <!-- <span>缺</span> -->
+
+      <i class="fa-solid fa-house"></i>
+      <span>首頁</span>
+    </label>
+
+    <input id="side02" type="radio" name="sideUp">
+    <label class="box" for="side02">
+      <span>缺</span>
+      <span>Shorts</span>
+    </label>
+
+    <input id="side03" type="radio" name="sideUp">
+    <label class="box" for="side03">
+      <span>缺</span>
+      <span>訂閱內容</span>
+    </label>
+
+    <hr>
+
+    <input id="side04" type="radio" name="sideUp">
+    <label class="box" for="side04">
+      <span>缺</span>
+      <span>媒體庫</span>
+    </label>
+
+    <input id="side05" type="radio" name="sideUp">
+    <label class="box" for="side05">
+      <span>缺</span>
+      <span>觀看紀錄</span>
+    </label>
+
+    <hr>
+
+    <!-- 置中的問題 -->
+    <div class="singIn_box">
+      <p>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</p>
+      <div class="singIn_side ">
+        <i class="fa-regular fa-circle-user"> 登入</i>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2 class="box_h2">探索</h2>
+
+    <input id="side06" type="radio" name="sideUp">
+    <label class="box" for="side06">
+      <span>缺</span>
+      <span>發燒影片</span>
+    </label>
+
+    <input id="side07" type="radio" name="sideUp">
+    <label class="box" for="side07">
+      <span>缺</span>
+      <span>音樂</span>
+    </label>
+
+    <input id="side08" type="radio" name="sideUp">
+    <label class="box" for="side08">
+      <span>缺</span>
+      <span>電影</span>
+    </label>
+
+    <input id="side09" type="radio" name="sideUp">
+    <label class="box" for="side09">
+      <span>缺</span>
+      <span>直播</span>
+    </label>
+
+    <input id="side10" type="radio" name="sideUp">
+    <label class="box" for="side10">
+      <span>缺</span>
+      <span>遊戲</span>
+    </label>
+
+    <input id="side11" type="radio" name="sideUp">
+    <label class="box" for="side11">
+      <span>缺</span>
+      <span>新聞</span>
+    </label>
+
+    <input id="side12" type="radio" name="sideUp">
+    <label class="box" for="side12">
+      <span>缺</span>
+      <span>體育</span>
+    </label>
+
+    <hr>
+
+    <input id="side13" type="radio" name="sideUp">
+    <label class="box" for="side13">
+      <span>缺</span>
+      <span>瀏覽頻道</span>
+    </label>
+
+    <hr>
+
+    <h1 class="box_h1">更多YouTube內容</h1>
+
+    <!-- id ,logo要再調成一樣的尺寸-->
+    <!-- input群組先跟上面分開(若是超連結是不是要拿掉)-->
+    <!-- 再跟老師確認超連結(按了是直接跳到另一個畫面)  -->
+    <input id="side14" type="radio" name="sideDown">
+    <label class="box" for="side14">
+      <span cla><img src="./images/logo_Premium.png" alt=""></span>
+      <div class="textAll">YouTube Premium</div>
+    </label>
+
+    <input id="side15" type="radio" name="sideDown">
+    <label class="box" for="side15">
+      <span><img src="./images/logo_Music.png" alt=""></span>
+      <div class="textAll">YouTube Music</div>
+    </label>
+
+    <input id="side16" type="radio" name="sideDown">
+    <label class="box" for="side16">
+      <span><img src="./images/logo_kids.png" alt=""></span>
+      <div class="textAll">YouTube Kids</div>
+    </label>
 
 
-  <div id="sidebar"></div>
+    <hr>
+
+    <input id="side17" type="radio" name="sideDown">
+    <label class="box" for="side17">
+      <span>缺</span>
+      <span>設定</span>
+    </label>
+
+    <input id="side18" type="radio" name="sideDown">
+    <label class="box" for="side18">
+      <span>缺</span>
+      <span>檢舉紀錄</span>
+    </label>
+
+    <input id="side19" type="radio" name="sideDown">
+    <label class="box" for="side19">
+      <span>缺</span>
+      <span>說明</span>
+    </label>
+
+    <input id="side20" type="radio" name="sideDown">
+    <label class="box" for="side20">
+      <span>缺</span>
+      <span>提供意見</span>
+    </label>
+
+    <hr>
+
+    <div class="rowBox">
+      <li>簡介</li>
+      <li>媒體</li>
+      <li>版權</li>
+      <li>與我們聯絡</li>
+      <li>創作者</li>
+      <li>廣告</li>
+      <li>開發人員</li>
+    </div>
+
+    <div class="rowBox">
+      <li>條款</li>
+      <li>隱私權</li>
+      <li>政策與安全性</li>
+      <li>YouTube 運作方式</li>
+      <li>測試新功能</li>
+    </div>
+
+    <div class="rowBox">
+      <div class="footer"> © 2023 Google LLC</div>
+    </div>
+
+  </div>
+
 
   <!-- content_top -->
   <div id="content_top">
-    <div class="float"> <!-- 未設變數/待確認結構 -->
-      <div class="card h-100"></div> <!-- 未設變數/待確認結構 -->
+    <div class="overflow"> <!-- 還未使用，還要設定一個超過要縮進去的，但不是卷軸 -->
+      <li id="card1"><a href="">全部</a></li>
+      <li id="card2"><a href="">音樂</a></li>
+      <li id="card3"><a href="">遊戲</a></li>
+      <li id="card4"><a href="">觀光</a></li>
+      <li id="card5"><a href="">動畫</a></li>
+      <li id="card6"><a href="">烹飪節目</a></li>
+      <li id="card7"><a href="">烹飪</a></li>
+      <li id="card8"><a href="">動作冒險遊戲</a></li>
+      <li id="card9"><a href="">自然</a></li>
+      <li id="card10"><a href="">最新上傳</a></li>
+      <!-- id是為了連結content頁面 -->
+
     </div>
   </div>
 
