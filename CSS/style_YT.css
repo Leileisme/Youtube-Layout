@@ -26,6 +26,7 @@ body {
 	left: 0;
 	top: 0;
 	/* background: rgb(138, 232, 237); */
+	z-index: 1;
 }
 
 /* 左邊-logo */
@@ -164,6 +165,34 @@ body {
 	bottom: -50px;
 }
 
+#header .search-iconMic:hover::before {
+	content: '使用語音搜尋';
+	background: rgba(0, 0, 0, 0.5);
+	width: 72px;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#header .singIn-icon:hover::before {
+	content: '設定';
+	background: rgba(0, 0, 0, 0.5);
+	width: 24px;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
 #header .searchText-R {
 	box-sizing: border-box;
 	line-height: 36px;
@@ -191,18 +220,6 @@ body {
 	color: #000;
 	cursor: pointer;
 }
-
-/* 為什麼這邊是直的文字? */
-/* #header .search-iconMic:hover::before {
-	content: '使用語音搜尋';
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
-	padding: 10px;
-	border-radius: 5px;
-	font-size: 0.75rem;
-	position: absolute;
-	bottom: -50px;
-} */
 
 #header .search-iconMic i {
 	box-sizing: border-box;
@@ -314,16 +331,13 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
-	margin-left: 5px;
-	margin-right: 20px;
 }
 
 #sidebar img {
 	width: 100%;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(0, -50%);
 }
 
 #sidebar input {
@@ -402,22 +416,10 @@ body {
 	list-style: none;
 	display: block;
 	width: 80%;
-	height: 50px;
-	line-height: 50px;
+	height: 25px;
 	margin-left: 25px;
 	border-radius: 10px;
 	font-size: 1.1rem;
-}
-
-#sidebar .box_h1 {
-	list-style: none;
-	display: block;
-	width: 80%;
-	height: 50px;
-	line-height: 50px;
-	margin-left: 25px;
-	border-radius: 10px;
-	font-size: 1.3rem;
 }
 
 /* sidebar 頁尾 */
@@ -457,7 +459,7 @@ body {
 	margin-top: 60px;
 	margin-left: 15%;
 	/* background: #86c89b; */
-	z-index: 1;
+	/* z-index: 1; */
 	text-align: center;
 }
 
@@ -513,6 +515,7 @@ body {
 	top: 35px;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-bottom: 0;
 }
 
 #content .card02 {
@@ -520,7 +523,9 @@ body {
 	height: 300px;
 	/* border: 1px solid #f00; */
 	margin-left: 15px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
+	margin-top: 10px;
+
 	float: left;
 	position: relative;
 }
@@ -641,9 +646,9 @@ body {
 
 #content .card03 {
 	width: 100%;
-	/* height: 50px; */
-	margin-top: 25px;
-	margin-bottom: 20px;
+	height: 20px;
+	margin-top: 30px;
+	margin-bottom: 25px;
 	float: left;
 }
 
@@ -654,20 +659,29 @@ body {
 #content .card04 {
 	width: 100%;
 	margin-left: 15px;
-	margin-bottom: 35px;
+	margin-bottom: 60px;
 	float: left;
 	position: relative;
-	font-size: 1.5rem;
+	font-size: 0;
 }
 
-#content .h1LogoBox {
+#content .imgBox {
 	width: 25px;
 	height: 25px;
-	margin-left: 15px;
-	margin-right: 15px;
-	float: left;
-	position: relative;
-	/* border: 1px solid red; */
+	position: absolute;
+	left: 0;
+	/* background: red; */
+}
+
+#content .imgBox img {
+	height: 100%;
+}
+
+#content h1 {
+	font-size: 1.5rem;
+
+	margin-left: 35px;
+	position: absolute;
 }
 
 #content .card05 {
@@ -675,9 +689,11 @@ body {
 	height: 520px;
 	/* background-color: #111; */
 	/* border: 1px solid #f00; */
-	margin-left: 15px;
+	margin-right: 15px;
+	/* margin-top: 35px; */
 	float: left;
 	position: relative;
+	margin-bottom: 20px;
 }
 
 #content .card05:hover img {
@@ -723,4 +739,3 @@ body {
 	cursor: pointer;
 	color: #777;
 }
-

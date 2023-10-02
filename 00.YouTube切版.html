@@ -23,7 +23,6 @@
 </head>
 
 
-<!-- header的一些hover提示問題(字會變成直列why?) -->
 <!-- icon 太粗，細的跑不出來，很多沒有的找其他的，待確認 -->
 <!-- 再跟確認是否要超連結(按了是直接跳到另一個畫面)  -->
 <!-- 為什麼content hr不能直接給屬性 -->
@@ -39,12 +38,12 @@
     <!-- 中間-搜尋 -->
 
     <!-- 網頁縮小的時候要變成剩放大鏡 -->
-    <!-- 打字搜尋後 要有一個叉叉的圖示 -->
+    <!-- 搜尋框打字的行為英文叫甚麼?  要有一個叉叉的圖示 -->
     <!--  無法更改粗細顏色? -->
     <div class="search h-60">
       <!-- search-L未設定東西 -->
       <div class="search-L">
-        <input type="text" name="" id="search" placeholder="搜尋">
+        <input type="search" name="" id="search" placeholder="搜尋">
         <label for="search" class="searchText-L h-100"> <i class="fa-solid fa-magnifying-glass"></i></label>
       </div>
 
@@ -60,11 +59,11 @@
     <!-- 右邊-登入 -->
     <div class="singIn h-60">
       <div class="singInText">
-        <!-- 登入 直接暴力給空格? -->
+        <!-- 登入 直接暴力給空格?sidebar也有一個 -->
         <i class="fa-regular fa-circle-user"> 登入</i>
       </div>
-      <div class="singIn-icon "><i class="fa-solid fa-ellipsis-vertical"></i></div>
     </div>
+    <div class="singIn-icon "><i class="fa-solid fa-ellipsis-vertical"></i></div>
   </div>
 
 
@@ -107,7 +106,7 @@
 
     <hr>
 
-    <!-- 置中的問題 -->
+
     <div class="singIn_box">
       <p>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</p>
       <div class="singIn_side ">
@@ -171,7 +170,7 @@
 
     <hr>
 
-    <h1 class="box_h1">更多YouTube內容</h1>
+    <h1 class="box_h2">更多YouTube內容</h1>
 
 
 
@@ -501,7 +500,9 @@
       </div>
 
       <div class="card04">
-        <div class="h1LogoBox"> <i class="fa-solid fa-tv"></i></div>
+        <!-- <div class="h1LogoBox"> -->
+        <div class="imgBox"><img src="./images/logo_Shorts.png" alt=""></div>
+        <!-- <i class="fa-solid fa-tv"></i></div> -->
         <h1>Shorts</h1>
       </div>
 
