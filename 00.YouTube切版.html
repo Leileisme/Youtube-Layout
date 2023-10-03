@@ -22,10 +22,7 @@
 
 </head>
 
-
-<!-- icon 太粗，細的跑不出來，很多沒有的找其他的，待確認 -->
-<!-- 再跟確認是否要超連結(按了是直接跳到另一個畫面)  -->
-<!-- 為什麼content hr不能直接給屬性 -->
+<!-- 再跟確認是否要超連結(按了是直接跳到另一個畫面) 現在不用，但可優化 -->
 
 <body>
   <!-- header -->
@@ -37,9 +34,8 @@
 
     <!-- 中間-搜尋 -->
 
-    <!-- 網頁縮小的時候要變成剩放大鏡 -->
-    <!-- 搜尋框打字的行為英文叫甚麼?  要有一個叉叉的圖示 -->
-    <!--  無法更改粗細顏色? -->
+    <!-- 網頁縮小的時候要變成剩放大鏡 這是偵測版型，現在還不行 -->
+    <!-- 搜尋框打字的行為英文叫甚麼?  要有一個叉叉的圖示 要用程式 -->
     <div class="search h-60">
       <!-- search-L未設定東西 -->
       <div class="search-L">
@@ -60,6 +56,7 @@
     <div class="singIn h-60">
       <div class="singInText">
         <!-- 登入 直接暴力給空格?sidebar也有一個 -->
+        <!-- 可以給 登入 一個span -->
         <i class="fa-regular fa-circle-user"> 登入</i>
       </div>
     </div>
@@ -70,6 +67,7 @@
 
   <!--sidebar  -->
   <!-- 卷軸要隱藏，等 hover 再出現 -->
+  <!-- 重製卷軸 -->
   <div id="sidebar">
 
     <input id="side01" type="radio" name="sideUp" checked>
@@ -248,7 +246,7 @@
 
   <!-- content_top -->
   <div id="content_top">
-    <div class="cardBox"> <!-- 還要設定一個超過要縮進去的，但不是卷軸 -->
+    <div class="cardBox"> <!-- 還要設定一個超過要縮進去的，但不是卷軸 程式 -->
 
       <input id="card1" type="radio" name="card" checked>
       <label for="card1">全部</label>
@@ -493,16 +491,10 @@
         </div>
       </div>
 
-
-      <!-- 為什麼hr不能直接給屬性 -->
-      <div class="card03">
-        <hr>
-      </div>
+      <hr>
 
       <div class="card04">
-        <!-- <div class="h1LogoBox"> -->
         <div class="imgBox"><img src="./images/logo_Shorts.png" alt=""></div>
-        <!-- <i class="fa-solid fa-tv"></i></div> -->
         <h1>Shorts</h1>
       </div>
 
@@ -574,10 +566,7 @@
       </div>
       <!-- 短影結束 -->
 
-      <!-- 為什麼hr不能直接給屬性 -->
-      <div class="card03">
-        <hr>
-      </div>
+      <hr>
 
       <div class="card02">
         <div class="up">
