@@ -643,7 +643,25 @@
     </div>
   </div>
   </div>
+  <script>
+    const search_L = document.getElementsByClassName('search-L')
+    const searchHover = document.querySelector('input[type="search"]')
+    const cancelBtn = document.createElement('button')
 
+    searchHover.addEventListener('input', () => {
+      cancelBtn.classList.add('cancelBtn')
+      cancelBtn.innerText = 'X'
+      search_L[0].prepend(cancelBtn)
+
+
+      cancelBtn.addEventListener('click', () => {
+        searchHover.value = ''
+        cancelBtn.remove()
+      })
+    })
+
+
+  </script>
 
 </body>
 
