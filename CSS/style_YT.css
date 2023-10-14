@@ -163,7 +163,7 @@ input[type='search']::-webkit-search-cancel-button {
 
 	position: absolute;
 	top: 50%;
-	right: 7%;
+	right: 8%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
 	background-color: rgba(0, 0, 0, 0);
@@ -171,15 +171,18 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 .cancelBtn:hover::before {
-	content: '';
+	content: 'X';
 	width: 36px;
 	height: 36px;
+	text-align: center;
+	line-height: 36px;
 	background: #f8f8f8;
 	border-radius: 50%;
 	top: 50%;
-	right: 7%;
+	right: 4%;
 	transform: translate(0, -50%);
 	position: absolute;
+	z-index: 1;
 }
 
 #header .search-R {
@@ -527,6 +530,7 @@ input[type='search']::-webkit-search-cancel-button {
 	margin-top: 10px;
 	font-size: 0.9rem;
 	color: #000;
+	cursor: pointer;
 }
 
 #content_top input {
