@@ -1,3 +1,5 @@
-# Youtube首頁版型
-初學HTML、CSS一個月後，僅使用CSS純手刻的Youtube首頁！
+# Youtube 首頁版型
+
+初學 HTML、CSS 一個月後，僅使用 CSS 純手刻的 Youtube 首頁！
+
 [馬上觀看](https://leileisme.github.io/Youtube-Layout/)
